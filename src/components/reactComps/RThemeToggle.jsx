@@ -7,7 +7,7 @@ export default function RToggleTheme(e) {
 
     const element = document.getElementById('currTheme');
     if (element) {
-        element.className = !isDark.value ? 'i-ri-moon-line' : 'i-ri-sun-line';
+        element.className = !isDark.value ? 'i-line-md:moon-rising-alt-loop' : 'i-line-md:moon-filled-alt-to-sunny-filled-loop-transition';
     }
 
     if (!document.startViewTransition) {
@@ -25,7 +25,7 @@ export default function RToggleTheme(e) {
     transition.ready.then(() => {
         const clipPath = [
             `circle(0px at ${x}px ${y}px)`,
-            `${sunPathEnd}`,
+            `circle(1000px at ${x}px ${y}px)`,
         ];
         console.log('Starting animation with clipPath:', clipPath);
 
@@ -36,6 +36,7 @@ export default function RToggleTheme(e) {
             {
                 duration: 1000,
                 easing: 'ease-in',
+                rangeEnd:"cover 100%",
                 pseudoElement: isDark.value
                     ? '::view-transition-old(root)'
                     : '::view-transition-new(root)',
