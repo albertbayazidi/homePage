@@ -1,5 +1,5 @@
-import siteConfig from '../site-config.js'
-import { isDark } from './store.js';
+import siteConfig from '../../site-config.js'
+import { isDark } from '../store.js';
 
 const handleNewDarkFilePath = (isDark, DarkPath, LightPath) =>{
 	isDark.subscribe((dark) => {

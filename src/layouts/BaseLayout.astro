@@ -1,26 +1,25 @@
 ---
 import { fade } from 'astro:transitions'
 import { ViewTransitions } from 'astro:transitions'
-//import BaseHead from '../components/BaseHead.astro'
-//import RHeader from '../components/RHeader.jsx'
+import BaseHead from '../components/BaseHead.astro'
+import RHeader from '../components/reactComps/RHeader.jsx'
 
 const { ...head } = Astro.props
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
-    <!-- <BaseHead {...head} /> -->
+    <BaseHead {...head} />
     <ViewTransitions />
   </head>
   <body class="bg-main text-main min-h-screen font-sans w-full bg-dot">
-    <!-- <Header client:load /> -->
+    
     <main
       class="grow max-w-3xl mx-auto sm:pt-36 pt-26 pb-16 px-6 relative"
       transition:animate={fade({ duration: '0.4s' })}
     >
-    
-    <!-- <RHeader client:only="react"/> -->
+    <RHeader client:only="react"/>
 
       <slot />
     </main>
