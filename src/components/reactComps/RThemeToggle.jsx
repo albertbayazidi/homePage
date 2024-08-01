@@ -1,7 +1,7 @@
+import React, { useState, useEffect } from 'react';
 import { isDark } from '../store.js';
 
 export default function RToggleTheme(e) {
-    const endRadius = 1600;
     const x = e.clientX;
     const y = e.clientY;
 
@@ -25,9 +25,10 @@ export default function RToggleTheme(e) {
     transition.ready.then(() => {
         const clipPath = [
             `circle(0px at ${x}px ${y}px)`,
-            `circle(1000px at ${x}px ${y}px)`,
+            `circle(2000px at ${x}px ${y}px)`,
         ];
         console.log('Starting animation with clipPath:', clipPath);
+        console.log(width)
 
         document.documentElement.animate(
             {
@@ -36,7 +37,6 @@ export default function RToggleTheme(e) {
             {
                 duration: 1000,
                 easing: 'ease-in',
-                rangeEnd:"cover 100%",
                 pseudoElement: isDark.value
                     ? '::view-transition-old(root)'
                     : '::view-transition-new(root)',
@@ -46,9 +46,7 @@ export default function RToggleTheme(e) {
         console.error('Error during transition:', error);
     });
 
-    transition.finished.then(() => {
-        console.log('Transition finished');
-    });
+    
 }
 
 function toggleHtmlClass() {
