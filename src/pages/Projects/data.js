@@ -1,14 +1,14 @@
 export const projects = [
   {
-    title: 'Ir Camera',
+    title: 'Homemade Ir Camera',
     description: 'LMAO',
-    icon: 'i-carbon-campsite',
+    icon: 'i-hugeicons:fire',
     href: '/',
   },
   {
     title: 'asC',
     description: 'LMAO',
-    icon: 'i-arcticons:asciicam',
+    icon: 'i-line-md:cog-loop',
     href: '/',
   },
   {
