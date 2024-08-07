@@ -1,16 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
-import RToggleTheme from './RThemeToggle.jsx';
 import siteConfig from '../../site-config.js';
 import getLinkTarget from '../../utils/link.js';
-import { isDark } from '../store.js';
-import {handleNewDarkFilePath} from '../../utils/changeFilePath.js'
 import PathSim from './pathSim.jsx'
 
 export default function RHeader() {
   const navBarLogo = siteConfig.header.logo || [];
   const navLinks = siteConfig.header.navLinks || [];
   const headerRef = useRef(null);
-  handleNewDarkFilePath(isDark,navBarLogo.src,navBarLogo.src_dark,"logo")
 
   return (
     <>
@@ -39,7 +35,6 @@ export default function RHeader() {
         <PathSim/>
         <div className="flex gap-x-6">
             <a href="https://github.com/albertbayazidi" className="i-ri-github-line" />
-                <RToggleTheme/>
         </div>
       </header>
     </>

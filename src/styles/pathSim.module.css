@@ -1,8 +1,7 @@
 .cursor {
     background-color: rgb(15 23 42);
     width: 0.25rem;
-    height: 2rem;
-
+    height: 1rem;
     animation: blink 1s infinite;
 }
 
@@ -13,4 +12,8 @@
     to {
         opacity: 0;
     }
+}
+
+.cursorConteiner{
+    cursor: help;
 }

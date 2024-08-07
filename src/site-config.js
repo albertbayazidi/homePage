@@ -27,7 +27,7 @@ export const siteConfig = {
     navLinks: [
       {
         text: 'Om meg',
-        href: '/omMeg', // BØR ENDREs
+        href: '/OmMeg', // BØR ENDREs
       },
       {
         text: 'Cv',
@@ -35,7 +35,7 @@ export const siteConfig = {
       },
       {
         text: 'Projects',
-        href: '/projects',
+        href: '/Projects',
       },
     ],
   },
@@ -43,7 +43,7 @@ export const siteConfig = {
     blogLinks: [
       {
         text: 'Om meg',
-        href: '/omMeg',
+        href: '/OmMeg',
       },
     ],
   },

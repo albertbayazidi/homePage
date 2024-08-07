@@ -1,13 +1,6 @@
 import siteConfig from '../../site-config.js'
-import { isDark } from '../store.js';
-import {handleNewDarkFilePath} from '../../utils/changeFilePath.js'
 
 export default function SoialMedia(){
-	
-	const Darkpath = "/goingmerry.white.svg"
-	const Lightpath = "/goingmerry.black.svg"
-
-	handleNewDarkFilePath(isDark,Darkpath,Lightpath)
 
 	return(
 		<div>
