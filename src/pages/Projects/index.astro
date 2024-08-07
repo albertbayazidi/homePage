@@ -1,7 +1,6 @@
 ---
 import { projects } from './data.js';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import ListProjects from '../../components/reactComps/ListProjects.jsx';
 ---
 
 <BaseLayout title="Projects" description="List of projects that I am proud of">
@@ -17,7 +16,6 @@ import ListProjects from '../../components/reactComps/ListProjects.jsx';
                     </span>
                     <i class={`${project.icon} w-5em h-5em ml-2`}/>
                 </h2>
-            {/* <ListProjects list={project} /> */}
           </div>
         ))}
       </div>
