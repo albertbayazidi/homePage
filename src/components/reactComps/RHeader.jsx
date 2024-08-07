@@ -4,6 +4,7 @@ import siteConfig from '../../site-config.js';
 import getLinkTarget from '../../utils/link.js';
 import { isDark } from '../store.js';
 import {handleNewDarkFilePath} from '../../utils/changeFilePath.js'
+import PathSim from './pathSim.jsx'
 
 export default function RHeader() {
   const navBarLogo = siteConfig.header.logo || [];
@@ -35,7 +36,7 @@ export default function RHeader() {
             ))}
           </nav>
         </div>
-        <div className="meow">/</div>
+        <PathSim/>
         <div className="flex gap-x-6">
             <a href="https://github.com/albertbayazidi" className="i-ri-github-line" />
                 <RToggleTheme/>

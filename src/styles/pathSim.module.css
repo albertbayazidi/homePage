@@ -1,0 +1,16 @@
+.cursor {
+    background-color: rgb(15 23 42);
+    width: 0.25rem;
+    height: 2rem;
+
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
