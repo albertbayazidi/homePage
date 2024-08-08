@@ -219,18 +219,19 @@
 .prose ol {
   margin-top: 1.25em;
   margin-bottom: 1.25em;
-  list-style-type: none;
 }
 .prose ul {
+  list-style: circle;
   margin-top: 1.25em;
   margin-bottom: 1.25em;
-  list-style-type: none;
 }
 .prose li {
+  list-style: circle;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
 .prose > ul > li p {
+  list-style: circle;
   margin-top: 0.75em;
   margin-bottom: 0.75em;
 }
@@ -244,6 +245,7 @@
 .prose ul ol,
 .prose ol ul,
 .prose ol ol {
+  list-style: circle;
   margin-top: 0.75em;
   margin-bottom: 0.75em;
 }

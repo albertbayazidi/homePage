@@ -1,9 +1,37 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro'
-//import ListProjects from '@/components/ListProjects.vue'
+import { UnorderedList, Unordered2List } from '../../components/reactComps/UnorderedList.jsx'
+import { Cvdata } from "./data.js";
 ---
 
 <BaseLayout title="Cv" description="">
-    <h1 class="mb-10 text-title">Cv</h1>
-  <div mb-16 sm:mb-24></div>
+  <h1 class="mb-10 text-title">Cv</h1>
+
+  <div mb-16 sm:mb-24>
+    <h2 class="text-xl">Utdanning:</h2>
+    <br/>
+    <UnorderedList Items={Cvdata.utdanningItems} />
+
+    <br />
+    <h2 class="text-xl">Jobberfaring:</h2>
+    <br />
+    <Unordered2List Items={Cvdata.jobberfaringItems} />
+    <br />
+
+    <h2 class="text-xl">Verv:</h2>
+    <br />
+    <Unordered2List Items={Cvdata.vervItems} />
+    <br />
+
+    <h2 class="text-xl">Ferdigheter:</h2>
+    <p>Python, PyTorch, C, C++, Javascript, HTML, CSS</p>
+    <br />
+
+    <h2 class="text-xl">Språk:</h2>
+    <p>Flytende i Norsk og engelsk både skriftlig og muntlig.</p>
+    <br />
+
+    <h2 class="text-xl">Referanser:</h2>
+    <p>Oppgis ved forespørsel</p>
+  </div>
 </BaseLayout>

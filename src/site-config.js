@@ -26,24 +26,12 @@ export const siteConfig = {
     },
     navLinks: [
       {
-        text: 'Om meg',
-        href: '/OmMeg', // BØR ENDREs
-      },
-      {
         text: 'Cv',
         href: '/Cv', // BØR ENDREs
       },
       {
         text: 'Projects',
         href: '/Projects',
-      },
-    ],
-  },
-  page: {
-    blogLinks: [
-      {
-        text: 'Om meg',
-        href: '/OmMeg',
       },
     ],
   },

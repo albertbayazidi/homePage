@@ -24,7 +24,7 @@ export default defineConfig({
       'container-link': 'p-2 opacity-60 hover:opacity-100 cursor-pointer hover:bg-truegray-500 !bg-opacity-10 transition-colors transition-opacity duration-200',
     },
     {
-      'hr-line': 'w-50 mx-auto mt-30 border-solid border-1px !border-truegray-200 !dark:border-truegray-800',
+      'hr-line': 'w-50 mx-auto mt-15 border-solid border-1px !border-truegray-200 !dark:border-truegray-800',
     },
   ],
   presets: [
