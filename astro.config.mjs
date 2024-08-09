@@ -5,6 +5,7 @@ import UnoCSS from 'unocss/astro'
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://example.com'  
   integrations: [mdx(), react(),UnoCSS({
     injectReset: true,
   })]
