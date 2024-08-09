@@ -1,3 +1,4 @@
 *.css linguist-vendored=true
 *.jsx linguist-vendored=true
 *.js linguist-vendored=true
+*.ts linguist-vendored=true
