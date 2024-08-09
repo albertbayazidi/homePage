@@ -7,14 +7,8 @@ export const siteConfig = {
   email: 'albert.bayazidi@gmail.com',
   socialLinks: [
     {
-      text: 'GitHub',
-      href: '',
-      icon: 'i-simple-icons-github',
-      header: 'i-ri-github-line',
-    },
-    {
       text: 'Linkedin',
-      href: '',
+      href: 'https://no.linkedin.com/in/albert-bayazidi',
       icon: 'i-simple-icons-linkedin',
     },
   ],

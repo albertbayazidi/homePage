@@ -17,7 +17,9 @@ export default function SoialMedia(){
                     </a>
 				))}
 
-				<a className="prose-link ml-1">
+				<a className="prose-link ml-1"
+                href="https://webring.kjelsrud.dev/#bayazidi"    
+            >
                     <img
 						src="/goingmerry.white.svg"
 						alt=""
