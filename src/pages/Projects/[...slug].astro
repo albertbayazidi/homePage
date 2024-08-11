@@ -1,20 +1,21 @@
 ---
 import {getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('projects');
+  const posts = await getCollection('Projects');
   return posts.map((post:any) => ({
     params: { slug: post.slug },
-    props: { post }, // Pass the entire post object as props
+    props: { post },
   }));
 }
 
-const { post } = Astro.props; // Get the post from props
-const { Content } = await post.render(); // Render the MDX content
+const { post } = Astro.props; 
+const { Content } = await post.render();
 
 ---
 
-<BaseLayout title={post.data.title}>
+<ProjectLayout title={post.data.title}>
     <Content />
-</BaseLayout>
+</ProjectLayout>

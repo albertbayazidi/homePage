@@ -1,0 +1,29 @@
+---
+import { fade } from 'astro:transitions'
+import { ViewTransitions } from 'astro:transitions'
+import BaseHead from '../components/BaseHead.astro'
+import RHeader from '../components/reactComps/RHeader.jsx'
+import SoialMedia from '../components/reactComps/SosialMedias'
+
+const { ...head } = Astro.props
+---
+
+<!doctype html>
+<html lang="en" class="dark overflow-x-hidden">
+  <head>
+    <BaseHead {...head} />
+    <ViewTransitions />
+  </head>
+  <body class="bg-main text-main min-h-screen font-sans w-full bg-dot">
+    <RHeader client:only="react"/>
+    <main
+      class="grow max-w-3xl mx-auto sm:pt-16 pt-16 pb-16 px-6 relative"
+      transition:animate={fade({ duration: '0.4s' })}
+    >
+    <article class="prose">
+            <slot  />
+    </article>
+    <SoialMedia client:only="react" />
+    </main>
+  </body>
+</html>

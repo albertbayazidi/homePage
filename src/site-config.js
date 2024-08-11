@@ -21,7 +21,7 @@ export const siteConfig = {
     navLinks: [
       {
         text: 'Cv',
-        href: '/Cv', // BØR ENDREs
+        href: '/Cv', 
       },
       {
         text: 'Projects',

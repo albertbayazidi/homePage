@@ -59,6 +59,9 @@
   top: calc(0.875em - 0.1875em);
   left: 0.25em;
 }
+.custom-list li::marker {
+  content: ''; /* Apply your custom marker */
+}
 .prose hr {
   border-color: rgba(125, 125, 125, 0.3);
   margin-top: 3em;
