@@ -4,9 +4,9 @@ import styles from '../../styles/pathSim.module.css';
 export default function PathSim() {
     const [displayedPath, setDisplayedPath] = useState('');
     const currentPath = window.location.href;
-    const match = currentPath.match(/http:\/\/[^\/]+\/(.*)/)[1];
 
-    const fullPath = "~/" + match;
+    const match = currentPath.match(/http:\/\/[^\/]+\/(.*)/);
+    const fullPath = match ? "~/" + match[1] : "~/";
 
     useEffect(() => {
         let currentIndex = 0;
@@ -22,7 +22,7 @@ export default function PathSim() {
 
     return (
         <div className="flex">
-            <span className={styles.cursorConteiner}>{displayedPath}</span>
+            <span className={styles.cursorContainer}>{displayedPath}</span>
             <span className={styles.cursor}>|</span>
         </div>
     );
