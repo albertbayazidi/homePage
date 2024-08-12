@@ -19,17 +19,16 @@ export default function RHeader() {
             <img id="logo" width="32" height="32" src={navBarLogo.src} alt={navBarLogo.alt} />
           </a>
           <nav className="flex flex-wrap gap-x-6 position-initial flex-row">
-            {navLinks.map((link) => (
-              <a
-                key={link.text}
-                aria-label={link.text}
-                target={link.href.startsWith('http') ? '_blank' : '_self'}
-                className="nav-link"
-                href={link.href}
-              >
-                {link.text}
-              </a>
-            ))}
+            <a
+            href="/Cv"
+            >
+            Cv
+            </a>
+            <a
+            href="/Projects"
+            >
+            Projects
+            </a>
           </nav>
         </div>
         <PathSim/>

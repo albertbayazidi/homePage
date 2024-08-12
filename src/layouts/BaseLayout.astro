@@ -3,6 +3,7 @@ import { fade } from 'astro:transitions'
 import { ViewTransitions } from 'astro:transitions'
 import BaseHead from '../components/BaseHead.astro'
 import RHeader from '../components/reactComps/RHeader.jsx'
+import Navbar from '../components/Navbar.astro'
 
 const { ...head } = Astro.props
 ---
@@ -14,7 +15,7 @@ const { ...head } = Astro.props
     <ViewTransitions />
   </head>
   <body class="bg-main text-main min-h-screen font-sans w-full bg-dot">
-    <RHeader client:only="react"/>
+    <Navbar/>
     <main
       class="grow max-w-3xl mx-auto sm:pt-16 pt-16 pb-16 px-6 relative"
       transition:animate={fade({ duration: '0.4s' })}

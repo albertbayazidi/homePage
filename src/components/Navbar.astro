@@ -1,0 +1,22 @@
+---
+import siteConfig from "../site-config"
+
+const navBarLogo = siteConfig.header.logo || [];
+const navLinks = siteConfig.header.navLinks || [];
+---
+  <header
+    id="header"
+    class="w-screen h-20 px-6 flex justify-between items-center relative">
+    <div class="flex items-center h-full">
+      <a href="/" class="mr-6" aria-label="Header Logo Image">
+        <img id="logo" width="32" height="32" src={navBarLogo.src} alt={navBarLogo.alt} />
+      </a>
+      <nav class="flex flex-wrap gap-x-6 position-initial flex-row">
+        <a href="/Cv">Cv</a>
+        <a href="/Projects">Projects</a>
+      </nav>
+    </div>
+    <div class="flex gap-x-6">
+        <a href="https://github.com/albertbayazidi" class="i-ri-github-line" />
+    </div>
+  </header>
