@@ -1,32 +1,31 @@
 ---
-
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { getCollection } from 'astro:content';
+import { getCollection } from "astro:content";
 
-const projects = await getCollection('Projects');
-
+const projects = await getCollection("Projects");
 ---
+
 <BaseLayout title="Projects" description="List of projects that I am proud of">
-    <h1 class="mb-10 text-title">Projects</h1>
-    <div class="mb-16 sm:mb-24">
-        {
-            projects.length > 0 && (
-                <div>
-                    {projects.map((project : any) => (
-                        <div class="mb-10">
-                            <h2 class="flex items-center relative h20">
-                                <a
-                                class="flex-grow text-3.2em color-transparent hover:(dark:opacity-100 text-#BBBBB cursor-pointer) font-bold text-stroke-1.5 text-stroke-hex-aaa op35 dark:op20 mr-4"
-                        href={`/Projects/${project.slug}/`}
-                                >
-                                    {project.data.title}
-                                </a>
-                                <span set:html={project.data.svg} />
-                            </h2>
-                        </div>
-                    ))}
-                </div>
-            )
-        }
-    </div>
+  <h1 class="mb-10 text-title">Projects</h1>
+  <div class="mb-16 sm:mb-24">
+    {
+      projects.length > 0 && (
+        <div>
+          {projects.map((project: any) => (
+            <div class="mb-10">
+              <h2 class="flex items-center relative h20">
+                <a
+                  class="flex-grow text-3.2em color-transparent hover:(dark:opacity-100 text-#BBBBB cursor-pointer) font-bold text-stroke-1.5 text-stroke-hex-aaa op35 dark:op20 mr-4"
+                  href={`/Projects/${project.slug}/`}
+                >
+                  {project.data.title}
+                </a>
+                <span set:html={project.data.svg} />
+              </h2>
+            </div>
+          ))}
+        </div>
+      )
+    }
+  </div>
 </BaseLayout>

@@ -2,42 +2,41 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import siteConfig from "../site-config";
 import LanguagesAndTeks from "../components/language.md";
-import SoialMedia from "../components/reactComps/SosialMedias";
 import Sosials from "../components/sosials.astro";
 ---
 
 <BaseLayout description={siteConfig.description}>
-    <article class="prose">
-        <img
-            src="./pb.jpeg"
-            class="rounded-full sm:size-80 size-60 mb-10"
-            alt="pb"
-        />
-        <h1 class="text-title">Albert Bayazidi</h1>
-        <p>
-            Velkomen til min nettside. Jeg heter Albert og studenter fysikk og
-            matematikk på NTNU. Spesialiseringen min er i nummerik. Jeg har
-            erfaring med FEM pakker som firedrake og netgen/NGSolve. Ellers er
-            jeg veldig glad i programmering.
-        </p>
-        <p>Dette er noen av teknologiene jeg bruker</p>
+  <article class="prose">
+    <img
+      src="./pb.jpeg"
+      class="rounded-full sm:size-80 size-60 mb-10"
+      alt="pb"
+    />
+    <h1 class="text-title">Albert Bayazidi</h1>
+    <p>
+      Velkomen til min nettside. Jeg heter Albert og studenter fysikk og
+      matematikk på NTNU. Spesialiseringen min er i nummerik. Jeg har erfaring
+      med FEM pakker som firedrake og netgen/NGSolve. Ellers er jeg veldig glad
+      i programmering.
+    </p>
+    <p>Dette er noen av teknologiene jeg bruker</p>
 
-        <LanguagesAndTeks />
+    <LanguagesAndTeks />
 
-        <div class="hr-line"></div>
+    <div class="hr-line"></div>
 
-        <p class="flex gap-x-4 gap-y-2 flex-wrap">
-            <Sosials />
-        </p>
-        <p>
-            Hvis du har noen spørsmål, vennligst send meg en e-post på
-            <a
-                prose-link
-                aria-label={siteConfig.email}
-                href={`mailto:${siteConfig.email}`}
-            >
-                {siteConfig.email}
-            </a>
-        </p>
-    </article>
+    <p class="flex gap-x-4 gap-y-2 flex-wrap">
+      <Sosials />
+    </p>
+    <p>
+      Hvis du har noen spørsmål, vennligst send meg en e-post på
+      <a
+        prose-link
+        aria-label={siteConfig.email}
+        href={`mailto:${siteConfig.email}`}
+      >
+        {siteConfig.email}
+      </a>
+    </p>
+  </article>
 </BaseLayout>

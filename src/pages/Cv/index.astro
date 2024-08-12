@@ -1,6 +1,9 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro'
-import { UnorderedList, Unordered2List } from '../../components/reactComps/UnorderedList.jsx'
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import {
+  UnorderedList,
+  Unordered2List,
+} from "../../components/reactComps/UnorderedList.jsx";
 import { Cvdata } from "./data.js";
 ---
 
@@ -9,7 +12,7 @@ import { Cvdata } from "./data.js";
 
   <div mb-16 sm:mb-24>
     <h2 class="text-xl">Utdanning:</h2>
-    <br/>
+    <br />
     <UnorderedList Items={Cvdata.utdanningItems} />
 
     <br />

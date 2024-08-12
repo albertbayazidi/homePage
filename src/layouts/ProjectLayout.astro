@@ -1,11 +1,11 @@
 ---
-import { fade } from 'astro:transitions'
-import { ViewTransitions } from 'astro:transitions'
-import BaseHead from '../components/BaseHead.astro'
-import Navbar from '../components/Navbar.astro'
-import Sosials from '../components/sosials.astro'
+import { fade } from "astro:transitions";
+import { ViewTransitions } from "astro:transitions";
+import BaseHead from "../components/BaseHead.astro";
+import Navbar from "../components/Navbar.astro";
+import Sosials from "../components/sosials.astro";
 
-const { ...head } = Astro.props
+const { ...head } = Astro.props;
 ---
 
 <!doctype html>
@@ -18,12 +18,12 @@ const { ...head } = Astro.props
     <Navbar />
     <main
       class="grow max-w-3xl mx-auto sm:pt-16 pt-16 pb-16 px-6 relative"
-      transition:animate={fade({ duration: '0.4s' })}
+      transition:animate={fade({ duration: "0.4s" })}
     >
-    <article class="prose">
-            <slot  />
-    </article>
-    <Sosials  />
+      <article class="prose">
+        <slot />
+      </article>
+      <Sosials />
     </main>
   </body>
 </html>
