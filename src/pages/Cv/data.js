@@ -24,7 +24,7 @@ const jobberfaringItems = [
 const vervItems = [ 
     { tittel:"Cogito NTNU (Sep 2022 - Aug 2023)",
         oppgaveTekst: ["Studentorganisasjon som fremmer læring og interesse for kunstig intelligens"], },
-    { tittel:"Orbit NTNU ADCS (Sep 2023 - Aug 2023 )",
+    { tittel:"Orbit NTNU ADCS (Sep 2023 - Aug 2024 )",
         oppgaveTekst: ["Satelitt simuleringer i Matlab", "Utvikle RK4 i C"],
     }
 ];
