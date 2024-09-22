@@ -27,7 +27,7 @@ In this repository, you will find:
 ## Demo
 
 <div align="center">
-  <iframe width="80%" src="https://github.com/albertbayazidi/IR-Interpolation/assets/102351774/d3559252-e7f2-40f6-a795-8a5bb3ff11f0" frameborder="0" allowfullscreen></iframe>
+  <iframe width="80%" style="min-height: 400px;" src="https://github.com/albertbayazidi/IR-Interpolation/assets/102351774/d3559252-e7f2-40f6-a795-8a5bb3ff11f0" frameborder="0" allowfullscreen></iframe>
 </div>
 
 ## Future Steps
