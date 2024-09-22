@@ -21,4 +21,7 @@ In this repository, you will find:
 
 ## Results
 
+<div align="center">
 <img src="https://github.com/albertbayazidi/basic_protein_folding/blob/main/_misc/data/monte_carlo_sim/task_2.5/gif/main_sim.gif?raw=true" width =80%>
+</div>
+

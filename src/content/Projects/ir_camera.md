@@ -26,10 +26,11 @@ In this repository, you will find:
 
 ## Demo
 
-<iframe width="560" height="315" src="https://github.com/albertbayazidi/IR-Interpolation/assets/102351774/d3559252-e7f2-40f6-a795-8a5bb3ff11f0" frameborder="0"  allowfullscreen></iframe>
+<div align="center">
+  <iframe width="80%" src="https://github.com/albertbayazidi/IR-Interpolation/assets/102351774/d3559252-e7f2-40f6-a795-8a5bb3ff11f0" frameborder="0" allowfullscreen></iframe>
+</div>
 
 ## Future Steps
-
 
 <ul class="custom-list">
   <li>Implement similar code in C++</li>

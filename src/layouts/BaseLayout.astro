@@ -13,7 +13,9 @@ const { ...head } = Astro.props;
     <BaseHead {...head} />
     <ViewTransitions />
   </head>
-  <body class="bg-main text-main min-h-screen font-sans w-full bg-dot">
+  <body
+    class="bg-main text-main min-h-screen font-sans w-full bg-dot overflow-x-hidden"
+  >
     <Navbar />
     <main
       class="grow max-w-3xl mx-auto sm:pt-16 pt-16 pb-16 px-6 relative"
