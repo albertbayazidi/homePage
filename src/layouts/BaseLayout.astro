@@ -1,8 +1,8 @@
 ---
-import { fade } from "astro:transitions";
-import { ViewTransitions } from "astro:transitions";
-import BaseHead from "../components/BaseHead.astro";
-import Navbar from "../components/Navbar.astro";
+import { fade } from 'astro:transitions';
+import { ClientRouter } from 'astro:transitions';
+import BaseHead from '../components/BaseHead.astro';
+import Navbar from '../components/Navbar.astro';
 
 const { ...head } = Astro.props;
 ---
@@ -11,7 +11,7 @@ const { ...head } = Astro.props;
 <html lang="en" class="dark overflow-x-hidden">
   <head>
     <BaseHead {...head} />
-    <ViewTransitions />
+    <ClientRouter />
   </head>
   <body
     class="bg-main text-main min-h-screen font-sans w-full bg-dot overflow-x-hidden"
@@ -19,7 +19,7 @@ const { ...head } = Astro.props;
     <Navbar />
     <main
       class="grow max-w-3xl mx-auto sm:pt-16 pt-16 pb-16 px-6 relative"
-      transition:animate={fade({ duration: "0.4s" })}
+      transition:animate={fade({ duration: '0.4s' })}
     >
       <slot />
     </main>

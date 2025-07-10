@@ -1,27 +1,27 @@
 ---
-import siteConfig from '../site-config'
-import '../styles/global.css'
-import '../styles/prose.css'
-import '../styles/dot.css'
+import siteConfig from '../site-config';
+import '../styles/global.css';
+import '../styles/prose.css';
+import '../styles/dot.css';
 
 interface Props {
-  title?: string
-  description?: string
-  image?: { src: string; alt?: string }
-  pageType?: 'website' | 'article'
+  title?: string;
+  description?: string;
+  image?: { src: string; alt?: string };
+  pageType?: 'website' | 'article';
 }
 
-const { description = '' } = Astro.props
+const { description = '' } = Astro.props;
 
-const title = [Astro.props.title, siteConfig.title].filter(Boolean).join(' | ')
+const title = [Astro.props.title, siteConfig.title].filter(Boolean).join(' | ');
 
-const canonicalURL = new URL(Astro.request.url, Astro.site)
+const canonicalURL = new URL(Astro.request.url, Astro.site);
 
 function formatCanonicalURL(url: string | URL) {
-  const path = url.toString()
-  const hasQueryParams = path.includes('?')
-  if (hasQueryParams) path.replace(/\/?$/, '')
-  return path.replace(/\/?$/, hasQueryParams ? '' : '/')
+  const path = url.toString();
+  const hasQueryParams = path.includes('?');
+  if (hasQueryParams) path.replace(/\/?$/, '');
+  return path.replace(/\/?$/, hasQueryParams ? '' : '/');
 }
 ---
 
