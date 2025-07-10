@@ -1,37 +1,88 @@
 const utdanningItems = [
-  "NTNU Trondheim, 5-årig Fysikk og matematikk siv.ing (august 2020 - juni 2026)",
-  "Lillestrøm videregående skole, studiespesialisering (august 2017 - juni 2020)"
+  {
+    title: "Sivilingeniør, Fysikk og matematikk",
+    subtitle: "NTNU, Trondheim",
+    date: "2020 - 2026",
+  },
+  {
+    title: "Studiespesialisering",
+    subtitle: "Lillestrøm videregående skole",
+    date: "2017 - 2020",
+  },
 ];
 
 const jobberfaringItems = [
   {
-    tittel: "NAV IT sommerjobb (Juni 2023 – Aug 2023)",
+    title: "Summer Intern R&D",
+    subtitle: "Q-free",
+    date: "Juni 2025 – Aug 2025",
     oppgaveTekst: [
-      "Evaluerer eksisterende brukerstøtte for NAV IT.",
-      "Utnyttet GLM til å predikere arbeidsledighetsvarighet.",
-      "Dokumenterte og visualiserte prosjektresultater"
-    ]
+      "Skrive C-kode ment for STM32.",
+      "Sample høyfrekvent signal med ADC.",
+      "Lagre data på SD-kort.",
+      "Lodding.",
+    ],
   },
   {
-    tittel: "Zerolytics internship (Nov 2022 - Jan 2023)",
+    title: "Summer Intern Frontend",
+    subtitle: "NAV IT",
+    date: "Juni 2024 – Aug 2024",
     oppgaveTekst: [
-      "Aggregere data fra ulike kilder relatert til stålindustriens klima fotavtrykk",
-      "Automatisering av datainnhenting fra ustandardiserte PDF-filer"
-    ]
-  }
+      "Videreutvikle nettside skrevet i React.",
+      "Utvikle admin-verktøy for å opprette, redigere og slette nyhetsmeldinger.",
+    ],
+  },
+  {
+    title: "Summer Intern Data Scientist",
+    subtitle: "NAV IT",
+    date: "Juni 2023 – Aug 2023",
+    oppgaveTekst: [
+      "Evaluerte eksisterende brukerstøtte for NAV IT.",
+      "Utnyttet GLM til å predikere arbeidsledighetsvarighet.",
+      "Dokumenterte og visualiserte prosjektresultater.",
+    ],
+  },
+  {
+    title: "Internship",
+    subtitle: "Zerolytics",
+    date: "Nov 2022 - Jan 2023",
+    oppgaveTekst: [
+      "Aggregerte data fra ulike kilder relatert til stålindustriens klimaavtrykk.",
+      "Automatiserte datainnhenting fra ustandardiserte PDF-filer.",
+    ],
+  },
 ];
 
-const vervItems = [ 
-    { tittel:"Cogito NTNU (Sep 2022 - Aug 2023)",
-        oppgaveTekst: ["Studentorganisasjon som fremmer læring og interesse for kunstig intelligens"], },
-    { tittel:"Orbit NTNU ADCS (Sep 2023 - Aug 2024)",
-        oppgaveTekst: ["Satelitt simuleringer i Matlab", "Utvikle RK4 i C"],
-    }
+const vervItems = [
+    {
+    title: "PVV",
+    subtitle: "Drift medlem",
+    date: "Aug 2024 - nå",
+        oppgaveTekst: ["Drift av PVV maskiner","Nix"],
+
+    },
+  {
+    title: "Orbit NTNU",
+    subtitle: "Medlem i ADCS",
+    date: "Sep 2023 - Aug 2024",
+    oppgaveTekst: ["Satellittsimuleringer i Matlab.", "Utviklet RK4 i C."],
+  },
+  {
+    title: "Cogito NTNU",
+    subtitle: "Medlem",
+    date: "Sep 2022 - Aug 2023",
+    oppgaveTekst: ["Fremme læring og interesse for kunstig intelligens."],
+  },
 ];
+
+const ferdigheterItems = [
+  "Python", "PyTorch", "C", "C++", "JavaScript", "React", "Astro", "HTML", "CSS", "Matlab"
+];
+
 
 export const Cvdata = {
-    vervItems,
-    jobberfaringItems,
-    utdanningItems
-}
-
+  vervItems,
+  jobberfaringItems,
+  utdanningItems,
+  ferdigheterItems,
+};
