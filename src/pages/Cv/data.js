@@ -86,3 +86,12 @@ export const Cvdata = {
   utdanningItems,
   ferdigheterItems,
 };
+
+export async function GET() {
+  return new Response(JSON.stringify(Cvdata), {
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+}
+
