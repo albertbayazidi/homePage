@@ -2,7 +2,6 @@
 
 **Merk**: Nettsiden er fremdeles under arbeid og er ikke fullstendig ferdigstilt.
 Du vil derfor oppdage ufullstendigheter og endringer som blir gjort etter hvert.
-Teknologier og verktøy
 
 ---
 

@@ -70,7 +70,7 @@ const vervItems = [
   {
     title: "Cogito NTNU",
     subtitle: "Medlem",
-    date: "Sep 2022 - Aug 2023",
+    date: "Sep 2022 - Jan 2023",
     oppgaveTekst: ["Fremme læring og interesse for kunstig intelligens."],
   },
 ];
