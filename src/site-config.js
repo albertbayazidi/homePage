@@ -1,34 +1,33 @@
 export const siteConfig = {
-  author: 'Albert Bayazidi',
-  title: 'Bayazidi.xyz',
-  subtitle: 'subtitle',
-  description: 'description',
+  author: "Albert Bayazidi",
+  title: "Bayazidi.xyz",
+  subtitle: "subtitle",
+  description: "description",
 
-  email: 'albert.bayazidi@gmail.com',
+  email: "albert.bayazidi@gmail.com",
   socialLinks: [
     {
-      text: 'Linkedin',
-      href: 'https://no.linkedin.com/in/albert-bayazidi',
-      icon: 'i-simple-icons-linkedin',
+      text: "Linkedin",
+      href: "https://no.linkedin.com/in/albert-bayazidi",
+      icon: "mdi:linkedin",
     },
   ],
   header: {
     logo: {
-      src: '/favicon.svg',
-      src_dark: '/favicon.black.svg',
-      alt: 'Logo Image',
+      src: "/favicon.svg",
+      alt: "Home Image",
     },
     navLinks: [
       {
-        text: 'Cv',
-        href: '/Cv', 
+        text: "Cv",
+        href: "/Cv",
       },
       {
-        text: 'Projects',
-        href: '/Projects',
+        text: "Projects",
+        href: "/Projects",
       },
     ],
   },
-}
+};
 
-export default siteConfig
+export default siteConfig;

@@ -1,12 +1,14 @@
 import { defineConfig } from 'astro/config';
 import mdx from "@astrojs/mdx";
 import react from "@astrojs/react";
-import UnoCSS from 'unocss/astro'
+import icon from "astro-icon";
+import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://www.bayazidi.xyz',
-  integrations: [mdx(), react(),UnoCSS({
-    injectReset: true,
-  })]
+  integrations: [mdx(), react(), icon()],
+  vite: {
+    plugins: [tailwindcss()],
+  }
 });

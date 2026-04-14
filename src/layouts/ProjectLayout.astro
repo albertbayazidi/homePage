@@ -3,7 +3,6 @@ import { fade } from 'astro:transitions';
 import { ClientRouter } from 'astro:transitions';
 import BaseHead from '../components/BaseHead.astro';
 import Navbar from '../components/Navbar.astro';
-import Sosials from '../components/sosials.astro';
 
 const { ...head } = Astro.props;
 ---
@@ -17,13 +16,10 @@ const { ...head } = Astro.props;
   <body class="bg-main text-main min-h-screen font-sans w-full bg-dot">
     <Navbar />
     <main
-      class="grow max-w-3xl mx-auto sm:pt-16 pt-16 pb-16 px-6 relative"
+      class="grow max-w-3xl mx-auto py-16 px-6 relative"
       transition:animate={fade({ duration: '0.4s' })}
     >
-      <article class="prose">
-        <slot />
-      </article>
-      <Sosials />
+      <slot />
     </main>
   </body>
 </html>
