@@ -5,37 +5,48 @@ svg: '<svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" viewBox="
 coolFactor: 5
 ---
 
-# IR_interpolator
+<h1 class="text-4xl font-extrabold text-slate-900 dark:text-white mb-6 mt-8">
+ IR_interpolator
+</h1>
 
 This project focuses on the initial testing and exploration of data interpolation from the AMG8833 sensor. The goal is to eventually develop a comprehensive IR camera using the insights gained from this stage.
 
-## Overview
+<h2 class="text-3xl font-bold mb-4 mt-10 border-b border-gray-700 pb-2">
+ Overview
+</h2>
 
 The main objective of this project is to understand the feasibility of data interpolation techniques applied to the output of the AMG8833 sensor. The AMG8833 sensor provides thermal data for a 8x8 pixel grid, through interpolation, we seek to enhance this resolution.
 
-## Contents
+<h2 class="text-3xl font-bold mb-4 mt-10 border-b border-gray-700 pb-2">
+ Contents
+</h2>
 
 In this repository, you will find:
 
-<ul  class="custom-list">
+<ul class="list-disc list-outside ml-5 space-y-3 mb-8">
   <li><strong>Dataset</strong>: The data collected from my AMG8833 sensor</li>
   <li><strong>Interpolation Script</strong>: The code used to perform data interpolation on the output from the AMG8833 sensor.</li>
   <li><strong>Future Plans</strong>: Discussion of how the gathered insights will be utilized in the subsequent stages of developing a proper IR camera.</li>
 </ul>
 
-
-## Demo
+<h2 class="text-3xl font-bold mb-4 mt-10 border-b border-gray-700 pb-2">
+ Demo
+</h2>
 
 <div align="center">
   <iframe width="80%" style="min-height: 400px;" src="https://github.com/albertbayazidi/IR-Interpolation/assets/102351774/d3559252-e7f2-40f6-a795-8a5bb3ff11f0" frameborder="0" allowfullscreen></iframe>
 </div>
 
-## Future Steps
+<h2 class="text-3xl font-bold mb-4 mt-10 border-b border-gray-700 pb-2">
+ Future Steps
+</h2>
 
-<ul class="custom-list">
+<ul class="list-disc list-outside ml-5 space-y-3 mb-8">
   <li>Implement similar code in C++</li>
   <li>Test interpolation on ESP32</li>
   <li>Create a prototype with a built-in screen</li>
 </ul>
 
+<p class="text-lg mb-8 leading-relaxed">
 If the ESP32 is unable to satisfy a decent framerate, I will do the interpolation on a server and just render the result on an ESP32. This, however, is a last resort. Before this, I will try splitting the work on both cores and maybe even iterative methods
+</p>

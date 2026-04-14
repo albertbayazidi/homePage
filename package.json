@@ -10,22 +10,26 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.0",
-    "@astrojs/react": "^4.3.0",
+    "@astrojs/mdx": "^4.3.13",
+    "@astrojs/react": "^4.4.2",
     "@astrojs/tailwind": "^6.0.2",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "astro": "^5.11.0",
+    "@tailwindcss/vite": "^4.1.18",
+    "@types/react": "^18.3.28",
+    "@types/react-dom": "^18.3.7",
+    "astro": "^5.17.2",
     "nanostores": "^0.10.3",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
-    "@iconify-json/tabler": "^1.1.117",
-    "@iconify/json": "^2.2.204",
-    "@iconify/utils": "^2.1.25",
-    "@unocss/preset-icons": "^0.61.3",
-    "prettier-plugin-astro": "^0.13.0",
-    "unocss": "^66.3.3"
+    "@iconify-json/mdi": "^1.2.3",
+    "@iconify-json/tabler": "^1.2.26",
+    "@iconify/json": "^2.2.440",
+    "@iconify/utils": "^2.3.0",
+    "@tailwindcss/typography": "^0.5.19",
+    "@unocss/preset-icons": "^0.61.9",
+    "astro-icon": "^1.1.5",
+    "prettier-plugin-astro": "^0.13.0"
   }
 }

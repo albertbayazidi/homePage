@@ -9,12 +9,12 @@ export async function getStaticPaths() {
     props: { post },
   }));
 }
-
 const { post } = Astro.props;
-
 const { Content } = await render(post);
 ---
 
 <ProjectLayout title={post.data.title}>
-  <Content />
+  <div>
+    <Content />
+  </div>
 </ProjectLayout>

@@ -54,13 +54,13 @@ const jobberfaringItems = [
 ];
 
 const vervItems = [
-    {
+  {
     title: "PVV",
     subtitle: "Drift medlem",
     date: "Aug 2024 - nå",
-        oppgaveTekst: ["Drift av PVV maskiner","Nix"],
+    oppgaveTekst: ["Drift av PVV maskiner", "Nix"],
 
-    },
+  },
   {
     title: "Orbit NTNU",
     subtitle: "Medlem i ADCS",
